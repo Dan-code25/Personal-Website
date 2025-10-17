@@ -1,0 +1,107 @@
+.project {
+  background-color: #F9FAFB;
+  width: 100%;
+  height: auto;
+  padding-bottom: 29px;
+}
+
+
+/* utilities */
+.project-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 348px;
+  height: 296px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 21px;
+  transition: all 0.4s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.project-img{
+  width: 321px;
+  height: 161px;
+  margin-top: 13px;
+}
+
+.project-desc{
+  width: 321px;
+  height: 88px;
+  margin-top: 15px;
+}
+
+.project-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.project-info{
+  font-size: 14px;
+  font-weight: 500;
+  color: #3d3d3d;
+  margin-top: 4px;
+}
+
+.project-stack{
+  margin-top: 17px;
+  display: flex;
+  gap: 15px;
+}
+
+.stack{
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: white;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.html-color{
+  border-color: #E44F26 ;
+  color: #E44F26 ;
+}
+
+.css-color{
+  border-color: #1572B6;
+  color: #1572B6;
+}
+
+.js-color{
+  border-color: #E0B700;
+  color: #E0B700;
+}
+
+.java-color{
+  border-color: #0074BD;
+  color: #0074BD;
+}
+
+@media (min-width: 1025px){
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 348px);
+    grid-auto-rows: 296px;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  .project-container> :nth-child(3) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    grid-row: 2;
+  }
+
+  .project{
+    padding-bottom: 50px;
+  }
+
+}

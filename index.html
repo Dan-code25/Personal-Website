@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="images/Logo.svg">
+  <title>DanCode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/tech.css">
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header class="navigation-bar">
+    <nav class="navbar">
+      <img src="images/Logo.svg" alt="" id="logo">
+      <svg id="hamburger-bar" width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.30002 1.96667H23.6334M2.30002 9.96667H23.6334M2.30002 17.9667H23.6334" stroke="black"
+          stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div class="nav-sections">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#tech-stack">Tech Stack</a>
+        <a class="nav-link" href="#project">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <svg id="back-btn" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.375 3.5L12.875 8L8.375 12.5M12.25 8L3.125 8" stroke="black" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <a class="side-link" href="#home">Home</a>
+    <a class="side-link" href="#about">About me</a>
+    <a class="side-link" href="#tech-stack">Tech Stack</a>
+    <a class="side-link" href="#project">Projects</a>
+  </div>
+
+
+
+  <!-- Home -->
+  <main>
+    <section class="home centered-row-col" id="home">
+      <img src="images/Profile.svg" alt="" id="profile-pic">
+      <div class="name-container">
+        <h1 id="name">Dan Jheniel Bringas</h1>
+        <img src="images/verified.svg" alt="verified-img">
+      </div>
+      <div class="info-container">
+        <h1 id="course">Computer Science Student</h1>
+        <p id="bio">An aspiring full stack developer and software engineer. Passionate about building scalable and user-friendly applications.</p>
+      </div>
+      <div class="socials-container ">
+        <div class="circle centered-row-col" id="github-btn">
+          <a id="github" href="https://github.com/Dan-code25" target="_blank">
+            <svg width="31" height="31" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.5 0.916687C13.5849 0.916687 11.6886 1.2939 9.91922 2.02678C8.14989 2.75966 6.54223 3.83386 5.18805 5.18805C2.45314 7.92295 0.916687 11.6323 0.916687 15.5C0.916687 21.9459 5.1021 27.4146 10.8917 29.3542C11.6209 29.4709 11.8542 29.0188 11.8542 28.625V26.1604C7.8146 27.0354 6.95419 24.2063 6.95419 24.2063C6.28335 22.5146 5.33544 22.0625 5.33544 22.0625C4.00835 21.1584 5.43752 21.1875 5.43752 21.1875C6.89585 21.2896 7.66877 22.6896 7.66877 22.6896C8.93752 24.9063 11.0813 24.25 11.9125 23.9C12.0438 22.9521 12.4229 22.3104 12.8313 21.9459C9.59377 21.5813 6.19585 20.3271 6.19585 14.7709C6.19585 13.1521 6.75002 11.8542 7.69794 10.8188C7.5521 10.4542 7.04169 8.93752 7.84377 6.96877C7.84377 6.96877 9.06877 6.57502 11.8542 8.45627C13.0063 8.13544 14.2604 7.97502 15.5 7.97502C16.7396 7.97502 17.9938 8.13544 19.1459 8.45627C21.9313 6.57502 23.1563 6.96877 23.1563 6.96877C23.9584 8.93752 23.4479 10.4542 23.3021 10.8188C24.25 11.8542 24.8042 13.1521 24.8042 14.7709C24.8042 20.3417 21.3917 21.5667 18.1396 21.9313C18.6646 22.3834 19.1459 23.2729 19.1459 24.6292V28.625C19.1459 29.0188 19.3792 29.4854 20.1229 29.3542C25.9125 27.4 30.0834 21.9459 30.0834 15.5C30.0834 13.5849 29.7061 11.6886 28.9733 9.91922C28.2404 8.14989 27.1662 6.54223 25.812 5.18805C24.4578 3.83386 22.8502 2.75966 21.0808 2.02678C19.3115 1.2939 17.4151 0.916687 15.5 0.916687Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="circle centered-row-col" id="fb-btn">
+          <a id="facebook" href="https://www.facebook.com/dan.jheniel.bringas/" target="_blank">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29 14.5C29 6.48966 22.5049 0 14.5 0C6.48966 0 0 6.48966 0 14.5C0 21.7355 5.30066 27.7349 12.2344 28.8215V18.6923H8.55228V14.5009H12.2344V11.3046C12.2344 7.67141 14.3958 5.66497 17.709 5.66497C19.2959 5.66497 20.957 5.94772 20.957 5.94772V9.51562H19.1255C17.3275 9.51562 16.7656 10.6348 16.7656 11.7812V14.5H20.7867L20.1405 18.6914H16.7656V28.8206C23.6939 27.734 29 21.7346 29 14.4991V14.5Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="circle centered-row-col" id="ig-btn">
+          <a id="instagram" href="https://www.instagram.com/dannnnn.exe/" target="_blank">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.7137 16.8341C18.7054 17.2697 18.568 17.693 18.3189 18.0504C18.0697 18.4077 17.72 18.6831 17.3142 18.8415C16.9084 19 16.4647 19.0343 16.0393 18.9403C15.6139 18.8463 15.226 18.628 14.9248 18.3133C14.6235 17.9986 14.4225 17.6015 14.3473 17.1724C14.272 16.7433 14.3258 16.3015 14.5019 15.903C14.6779 15.5045 14.9684 15.1672 15.3363 14.934C15.7043 14.7008 16.1332 14.582 16.5688 14.5928C17.1475 14.6143 17.6951 14.8603 18.0956 15.2787C18.496 15.6971 18.7177 16.255 18.7137 16.8341Z"
+                fill="black" />
+              <path
+                d="M20.2991 9.94531H12.8397C12.1016 9.94531 11.3938 10.2385 10.8719 10.7604C10.3499 11.2823 10.0567 11.9902 10.0567 12.7283V20.3554C10.0567 20.7209 10.1287 21.0828 10.2686 21.4204C10.4084 21.7581 10.6134 22.0649 10.8719 22.3233C11.1303 22.5817 11.4371 22.7867 11.7747 22.9266C12.1124 23.0665 12.4743 23.1384 12.8397 23.1384H20.2991C20.6646 23.1384 21.0265 23.0665 21.3641 22.9266C21.7018 22.7867 22.0086 22.5817 22.267 22.3233C22.5254 22.0649 22.7304 21.7581 22.8703 21.4204C23.0101 21.0828 23.0821 20.7209 23.0821 20.3554V12.7421C23.0836 12.3755 23.0127 12.0123 22.8735 11.6733C22.7343 11.3342 22.5296 11.0259 22.271 10.7661C22.0125 10.5063 21.7053 10.3 21.3669 10.1592C21.0285 10.0184 20.6656 9.94567 20.2991 9.94531ZM16.5687 20.5644C15.8303 20.5811 15.1037 20.3774 14.4815 19.9793C13.8594 19.5811 13.37 19.0067 13.0758 18.3292C12.7816 17.6517 12.6959 16.9019 12.8297 16.1755C12.9635 15.4491 13.3107 14.7791 13.827 14.2509C14.3433 13.7227 15.0052 13.3603 15.7284 13.2099C16.4515 13.0596 17.2031 13.1281 17.8871 13.4068C18.5711 13.6855 19.1566 14.1616 19.5688 14.7745C19.981 15.3874 20.2013 16.1092 20.2015 16.8478C20.2075 17.3305 20.1182 17.8097 19.9388 18.2578C19.7594 18.706 19.4934 19.1143 19.1559 19.4596C18.8185 19.8048 18.4163 20.0801 17.9724 20.2696C17.5284 20.4592 17.0514 20.5594 16.5687 20.5644ZM20.6057 13.1326C20.515 13.1326 20.4252 13.1145 20.3415 13.0794C20.2579 13.0442 20.1821 12.9928 20.1186 12.928C20.055 12.8632 20.0051 12.7864 19.9716 12.702C19.9382 12.6177 19.9219 12.5275 19.9237 12.4368C19.9237 12.2523 19.997 12.0753 20.1275 11.9448C20.258 11.8144 20.435 11.7411 20.6195 11.7411C20.804 11.7411 20.981 11.8144 21.1115 11.9448C21.2419 12.0753 21.3152 12.2523 21.3152 12.4368C21.318 12.535 21.2994 12.6327 21.2609 12.7231C21.2224 12.8135 21.1648 12.8945 21.0921 12.9606C21.0193 13.0266 20.9332 13.0762 20.8395 13.1059C20.7458 13.1356 20.6469 13.1447 20.5494 13.1326H20.6057Z"
+                fill="black" />
+              <path
+                d="M16.5687 2.75005C12.922 2.73182 9.4174 4.16299 6.82588 6.72872C4.23437 9.29445 2.76822 12.7846 2.74999 16.4313C2.73176 20.078 4.16292 23.5826 6.72866 26.1742C9.29439 28.7657 12.7845 30.2318 16.4312 30.2501C18.2369 30.2591 20.0267 29.9124 21.6984 29.2297C23.3701 28.547 24.8909 27.5418 26.1741 26.2714C27.4573 25.001 28.4777 23.4902 29.177 21.8255C29.8764 20.1607 30.241 18.3745 30.25 16.5688C30.259 14.7631 29.9123 12.9734 29.2296 11.3017C28.547 9.62999 27.5417 8.10914 26.2713 6.82595C25.0009 5.54276 23.4902 4.52236 21.8254 3.82302C20.1606 3.12367 18.3744 2.75908 16.5687 2.75005ZM24.9191 20.2153C24.9229 20.8322 24.8043 21.4437 24.57 22.0143C24.3358 22.585 23.9906 23.1035 23.5544 23.5398C23.1183 23.976 22.5999 24.3214 22.0293 24.5558C21.4587 24.7902 20.8472 24.9091 20.2304 24.9054H12.9099C12.293 24.9093 11.6815 24.7906 11.1108 24.5563C10.5402 24.3221 10.0217 23.9769 9.58539 23.5407C9.14912 23.1046 8.80377 22.5862 8.56934 22.0156C8.33492 21.445 8.21609 20.8335 8.21974 20.2167V12.8948C8.21591 12.2779 8.33456 11.6664 8.56882 11.0958C8.80307 10.5251 9.14828 10.0066 9.58442 9.57033C10.0206 9.13406 10.5389 8.7887 11.1096 8.55428C11.6802 8.31985 12.2916 8.20102 12.9085 8.20468H20.2304C20.8471 8.20103 21.4585 8.31981 22.029 8.55415C22.5995 8.78849 23.1178 9.13372 23.5539 9.56984C23.9901 10.006 24.3353 10.5243 24.5696 11.0948C24.804 11.6653 24.9228 12.2767 24.9191 12.8934V20.2153Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="circle centered-row-col" id="linkedin-btn">
+          <a id="linkedin" href="https://www.linkedin.com/in/dan-jheniel-bringas-8a898035a/" target="_blank">
+            <svg width="30" height="30" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5 0.580017C6.81209 0.580017 0.579987 6.81212 0.579987 14.5C0.579987 22.1879 6.81209 28.42 14.5 28.42C22.1879 28.42 28.42 22.1879 28.42 14.5C28.42 6.81212 22.1879 0.580017 14.5 0.580017ZM11.0925 20.2696H8.27369V11.1984H11.0925V20.2696ZM9.66569 10.0848C8.77539 10.0848 8.19974 9.45402 8.19974 8.67392C8.19974 7.87787 8.79279 7.26597 9.70194 7.26597C10.6111 7.26597 11.1679 7.87787 11.1853 8.67392C11.1853 9.45402 10.6111 10.0848 9.66569 10.0848ZM21.3875 20.2696H18.5687V15.2424C18.5687 14.0723 18.1598 13.2777 17.1404 13.2777C16.3618 13.2777 15.8992 13.8156 15.6948 14.3333C15.6194 14.5174 15.6005 14.7784 15.6005 15.038V20.2681H12.7803V14.0911C12.7803 12.9587 12.744 12.0118 12.7063 11.1969H15.1554L15.2844 12.457H15.341C15.7122 11.8654 16.6213 10.9925 18.1424 10.9925C19.9969 10.9925 21.3875 12.2351 21.3875 14.906V20.2696Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button type="button" id="download-btn" class="centered-row button-style">
+        <svg class="btn-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.8627 12.067C13.0051 11.9531 13.187 11.9005 13.3683 11.9207C13.5496 11.9409 13.7154 12.0323 13.8293 12.1747C13.9432 12.3172 13.9958 12.4991 13.9756 12.6803C13.9554 12.8616 13.8641 13.0275 13.7216 13.1414L11.4354 14.9701C11.313 15.07 11.1599 15.1248 11.0018 15.125H10.9945C10.8393 15.1239 10.6891 15.0702 10.5683 14.9729L8.27934 13.1414C8.13687 13.0275 8.04549 12.8616 8.02529 12.6803C8.00509 12.4991 8.05773 12.3172 8.17163 12.1747C8.28553 12.0323 8.45136 11.9409 8.63263 11.9207C8.81391 11.9005 8.99579 11.9531 9.13825 12.067L10.3125 13.0075V9.85419C10.3125 9.67185 10.3849 9.49698 10.5139 9.36805C10.6428 9.23912 10.8177 9.16669 11 9.16669C11.1823 9.16669 11.3572 9.23912 11.4861 9.36805C11.6151 9.49698 11.6875 9.67185 11.6875 9.85419V13.0075L12.8627 12.067Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6.41665 2.0625C5.74808 2.0625 5.1069 2.32809 4.63415 2.80084C4.1614 3.27358 3.89581 3.91477 3.89581 4.58333V17.4167C3.89581 18.0852 4.1614 18.7264 4.63415 19.1992C5.1069 19.6719 5.74808 19.9375 6.41665 19.9375H15.5833C16.2519 19.9375 16.8931 19.6719 17.3658 19.1992C17.8386 18.7264 18.1041 18.0852 18.1041 17.4167V7.51483C18.1041 7.1794 17.999 6.8524 17.8035 6.57983L15.0406 2.73167C14.8922 2.52475 14.6967 2.35614 14.4702 2.23977C14.2437 2.12341 13.9927 2.06265 13.7381 2.0625H6.41665ZM5.27081 4.58333C5.27081 3.95083 5.78415 3.4375 6.41665 3.4375H13.0625V7.46808C13.0625 7.84758 13.3705 8.15558 13.75 8.15558H16.7291V17.4167C16.7291 18.0492 16.2158 18.5625 15.5833 18.5625H6.41665C5.78415 18.5625 5.27081 18.0492 5.27081 17.4167V4.58333Z"
+            fill="white" />
+        </svg>
+        Download CV
+      </button>
+      <button type="button" id="contact-btn" class="centered-row button-style " >
+        <svg class="btn-icon" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.96875 0.25H16.0312C17.118 0.25 18 1.132 18 2.21875V11.7812C18 12.3034 17.7926 12.8042 17.4234 13.1734C17.0542 13.5426 16.5534 13.75 16.0312 13.75H1.96875C1.44661 13.75 0.945846 13.5426 0.576633 13.1734C0.207421 12.8042 0 12.3034 0 11.7812L0 2.21875C0 1.132 0.882 0.25 1.96875 0.25ZM1.6875 11.7824C1.6875 11.9376 1.8135 12.0636 1.96875 12.0636H16.0312C16.1058 12.0636 16.1774 12.034 16.2301 11.9812C16.2829 11.9285 16.3125 11.857 16.3125 11.7824V4.53513L9.4275 8.57163C9.29791 8.64779 9.15032 8.68794 9 8.68794C8.84968 8.68794 8.70209 8.64779 8.5725 8.57163L1.6875 4.53513V11.7824ZM16.3125 2.57875V2.21875C16.3125 2.14416 16.2829 2.07262 16.2301 2.01988C16.1774 1.96713 16.1058 1.9375 16.0312 1.9375H1.96875C1.89416 1.9375 1.82262 1.96713 1.76988 2.01988C1.71713 2.07262 1.6875 2.14416 1.6875 2.21875V2.57875L9 6.865L16.3125 2.57875Z"
+            fill="black" />
+        </svg>
+        Contact Me
+      </button>
+    </section>
+
+    <!-- About Me -->
+    <section class="about centered-row-col">
+      <h1 class="section-header" id="about">About me</h1>
+      <div class="cards-container">
+        <div class="card animate-scroll">
+          <div class="about-title-container">
+            <img class="about-icon" src="images/icons/educ.svg" alt="education-img">
+            <h2 class="about-title">Education</h2>
+          </div>
+          <p class="about-details">
+            Currently studying Bachelor of Science in Computer Science in Technological University of the Phillippines - Manila.
+          </p>
+        </div>
+        <div class="card animate-scroll">
+          <div class="about-title-container">
+            <img class="about-icon" src="images/icons/org.svg" alt="organization-img">
+            <h2 class="about-title">Organizations</h2>
+          </div>
+          <p class="about-details">
+            Front-End Development Lead of GDGoC - TUP Manila, member of Compass - TUP Manila, and AWSLC - TUP Manila.
+          </p>
+        </div>
+        <div class="card animate-scroll">
+          <div class="about-title-container">
+            <img class="about-icon" src="images/icons/career.svg" alt="career-img">
+            <h2 class="about-title">Career Interest</h2>
+          </div>
+          <p class="about-details">
+            Interested in software development, web development, mobile applications, and building technology solutions.
+          </p>
+        </div>
+        <div class="card margin-last animate-scroll">
+          <div class="about-title-container">
+            <img class="about-icon" src="images/icons/hobby.svg" alt="hobby-img">
+            <h2 class="about-title">Hobbies</h2>
+          </div>
+          <p class="about-details">
+            I enjoy playing online games, watching movies or YouTube videos, programming, and learning new technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="centered-row-col">
+      <h1 class="section-header" id="tech-stack">Tech Stack</h1>
+      <h2 class="tech-title">Frontend</h2>
+
+      <div class="frontend-container">
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/html-logo.svg" alt="html">
+          <p class="tech-name">HTML</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/css-logo.svg" alt="css">
+          <p class="tech-name">CSS</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/js-logo.svg" alt="javascript">
+          <p class="tech-name">JavaScript</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/bootstrap-logo.svg" alt="bootstrap">
+          <p class="tech-name">Bootstrap</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/react-logo.svg" alt="react">
+          <p class="tech-name">React</p>
+        </div>
+      </div>
+
+      <h2 class="tech-title top-margin">Backend</h2>
+      <div class="backend-container">
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/java-logo.svg" alt="java">
+          <p class="tech-name">Java</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/python-logo.svg" alt="python">
+          <p class="tech-name">Python</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/mySQL-logo.svg" alt="mysql">
+          <p class="tech-name">MySQL</p>
+        </div>
+      </div>
+
+      <h2 class="tech-title top-margin">UI/UX Design</h2>
+      <div class="design-container margin-last">
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/figma.svg" alt="figma">
+          <p class="tech-name">Figma</p>
+        </div>
+        <div class="tech-card animate-scroll">
+          <img src="images/logo/canva.svg" alt="canva">
+          <p class="tech-name">Canva</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section class="project centered-row-col">
+      <h1 class="section-header" id="project">Projects</h1>
+      <div class="project-container">
+        <div class="project-card animate-scroll">
+          <img class="project-img" src="images/project1.svg" alt="">
+          <div class="project-desc">
+            <h2 class="project-title">Color Flipper</h2>
+            <p class="project-info">A hexcode color generator</p>
+            <div class="project-stack">
+              <button class="stack html-color">HTML</button>
+              <button class="stack css-color">CSS</button>
+              <button class="stack js-color">JavaScript</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-scroll">
+          <img class="project-img" src="images/project2.svg" alt="">
+          <div class="project-desc">
+            <h2 class="project-title">Rock Paper Scissors</h2>
+            <p class="project-info">A rock paper scissors website game</p>
+            <div class="project-stack">
+              <button class="stack html-color">HTML</button>
+              <button class="stack css-color">CSS</button>
+              <button class="stack js-color">JavaScript</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-scroll">
+          <img class="project-img" src="images/project3.svg" alt="">
+          <div class="project-desc">
+            <h2 class="project-title">Puzzle8</h2>
+            <p class="project-info">A sliding game for desktops and laptops</p>
+            <div class="project-stack">
+              <button class="stack java-color">Java</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h1 class="footer-title">Navigations</h1>
+    <a class="footer-link" href="#home">Home</a>
+    <a class="footer-link" href="#about">About me</a>
+    <a class="footer-link" href="#tech-stack">Tech Stack</a>
+    <a class="footer-link" href="#project">Projects</a>
+    
+    <div class="copyright">
+      <p id="credits">&copy; 2025 Dan Jheniel Bringas. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>

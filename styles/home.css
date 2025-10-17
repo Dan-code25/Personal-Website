@@ -1,0 +1,210 @@
+.home {
+  margin-top: 80px;
+}
+
+.name-container{
+  display: flex;
+
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+  width: 305px;
+}
+
+#name{
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 305px;
+}
+
+#course{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+#bio{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 38px;
+  color: #3D3D3D;
+  text-align: center;
+}
+
+.socials-container{
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  column-gap: 30px;
+}
+
+#github{
+  width: 31px;
+  height: 33px;
+  transition: all 0.4s ease;
+}
+
+#github-btn{
+  transition: all 0.4s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+#github-btn:hover{
+    background-color: rgb(168, 168, 170);
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#facebook{
+  width: 29px;
+  height: 31px;
+}
+
+#fb-btn {
+  transition: all 0.4s ease;
+  animation: float 3s .5s ease-in-out infinite;
+}
+
+#fb-btn:hover {
+  background-color: rgb(168, 168, 170);
+  transform: translateY(-5px);
+}
+
+#instagram{
+  width: 33px;
+  height: 34px;
+}
+
+#ig-btn {
+  transition: all 0.4s ease;
+  animation: float 3s 1s ease-in-out infinite;
+}
+
+#ig-btn:hover {
+  background-color: rgb(168, 168, 170);
+  transform: translateY(-5px);
+}
+
+#linkedin{
+  width: 30px;
+  height: 31px;
+}
+
+#linkedin-btn {
+  transition: all 0.4s ease;
+  animation: float 3s 1.5s ease-in-out infinite;
+}
+
+#linkedin-btn:hover {
+  background-color: rgb(168, 168, 170);
+  transform: translateY(-5px);
+}
+
+#download-btn{
+  margin-top: 46px;
+  margin-bottom: 18px;
+  color: white;
+  background-color: black;
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+#download-btn:hover{
+  background-color: rgb(14, 18, 62);
+  transform: translateY(-10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-btn{
+  border: 2px solid;
+  background-color: white;
+  margin-bottom: 94px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+#contact-btn:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Utilities */
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+
+.socials-size{
+  width: 29px;
+  height: 29px;
+}
+
+.button-style{
+  font-size: 14px;
+  font-weight: 600;
+  width: 170px;
+  height: 45px;
+  border-radius: 6px;
+  gap: 5px;
+}
+
+/* media queries */
+@media (min-width: 768px){
+  #profile-pic{
+    width: 325px;
+    height: 325px;
+  }
+
+  #name{
+    font-size: 36px;
+  }
+
+  .name-container{
+    width: 370px;
+  }
+
+  .info-container{
+    width: 370px;
+  }
+
+  #course{
+    font-size: 20px
+  }
+
+  #bio{
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .button-style{
+    width: 200px;
+    height: 60px;
+    font-size: 17px;
+    gap: 7px;
+  }
+
+  .btn-icon{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* animation */
+@keyframes float{
+  0%,
+  100%{
+    transform: translateY(-0px);
+  }
+  50%{
+    transform: translateY(-7px);
+  }
+}
