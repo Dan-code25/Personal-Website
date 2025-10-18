@@ -201,4 +201,8 @@ body{
   .nav-sections{
     display: flex;
   }
+
+  body{
+    background-size: 40px 40px;
+  }
 }
